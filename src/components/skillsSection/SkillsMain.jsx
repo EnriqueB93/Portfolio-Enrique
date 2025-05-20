@@ -1,11 +1,10 @@
-import React from 'react';
 import { SkillsAll } from './SkillsAll';
 import { SkillsAllSM } from './SkillsAllSM';
 import { SkillsText } from './SkillsText';
 
 export const SkillsMain = () => {
 	return (
-		<div>
+		<div id="habilidades">
 			<div className=" px-4 max-w-[1200px] overflow-hidden min-h-[600px]  mx-auto relative  ">
 				<div>
 					<SkillsText />

@@ -41,7 +41,7 @@ const projects = [
 
 export const ProjectMain = () => {
 	return (
-		<div className=" px-4 max-w-[1200px]  mx-auto ">
+		<div id="projetos" className=" px-4 max-w-[1200px]  mx-auto ">
 			<ProjectText />
 
 			<div className="flex flex-col gap-20 mt-12 max-w-[900px] mx-auto ">

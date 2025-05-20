@@ -1,5 +1,6 @@
 import { AboutMain } from './components/about/AboutMain';
 import { ContactMain } from './components/contact/ContactMain';
+import { Footer } from './components/footer/footer';
 import { HeroBackground } from './components/hero/HeroBackground';
 import { HeroMain } from './components/hero/HeroMain';
 import { SubHeroSection } from './components/hero/SubHeroSection';
@@ -10,7 +11,7 @@ import { SkillsMain } from './components/skillsSection/SkillsMain';
 
 export const App = () => {
 	return (
-		<div className="font-caslon ">
+		<div className="font-caslon text-white relative overflow-hidden  ">
 			<NavbarMain />
 			<HeroMain />
 			<HeroBackground />
@@ -20,6 +21,7 @@ export const App = () => {
 			<SkillSub />
 			<ProjectMain />
 			<ContactMain />
+			<Footer />
 		</div>
 	);
 };
