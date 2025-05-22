@@ -1,8 +1,10 @@
-import React from 'react';
 import { FaCss3, FaGitAlt, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiTailwindcss, SiTypescript } from 'react-icons/si';
-import { SkillSingle } from './SkillSingle';
+
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion/react';
+import { fadeIn } from '../../utils/framerMotion/variant';
 
 const skills = [
 	{
@@ -44,10 +46,17 @@ export const SkillsAllSM = () => {
 		<div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12 ">
 			{skills.map((item, index) => {
 				return (
-					<div key={index} className="flex flex-col items-center ">
+					<motion.div
+						variants={fadeIn('up', `0.${index}`)}
+						initial="hidden"
+						whileInView="show"
+						viewport={{ once: false, amount: 0 }}
+						key={index}
+						className="flex flex-col items-center "
+					>
 						<item.icon className="text-7xl text-orange" />
 						<p className="text-white text-center mt-4">{item.skill}</p>
-					</div>
+					</motion.div>
 				);
 			})}
 		</div>

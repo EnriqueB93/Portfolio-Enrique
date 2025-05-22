@@ -4,6 +4,10 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { SiTailwindcss, SiTypescript } from 'react-icons/si';
 import { SkillSingle } from './SkillSingle';
 
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion/react';
+import { fadeIn } from '../../utils/framerMotion/variant';
+
 const skills = [
 	{
 		skill: 'HTML',
@@ -45,11 +49,18 @@ export const SkillsAll = () => {
 			<div className="flex justify-center items-center gap-2 relative max-w-[1200px] mx-auto">
 				{skills.map((item, index) => {
 					return (
-						<SkillSingle
-							key={index}
-							text={item.skill}
-							imgIcon={<item.icon />}
-						/>
+						<motion.div
+							variants={fadeIn('up', `0.${index}`)}
+							initial="hidden"
+							whileInView="show"
+							viewport={{ once: false, amount: 0 }}
+						>
+							<SkillSingle
+								key={index}
+								text={item.skill}
+								imgIcon={<item.icon />}
+							/>
+						</motion.div>
 					);
 				})}
 			</div>

@@ -28,6 +28,26 @@
     rgba(94, 206, 220, 0.5);
   --inset-shadow-orangeMediumshadow: inset 10px 10px 200px 150px
     rgba(240, 169, 79, 0.5);
+
+  /*
+
+     --color-brown: #171717;
+    --color-lightBrown: #645550;
+    --color-darkBrown: #101010;
+    --color-black: #000000;
+    --color-cyan: #a554fd;
+    --color-darkCyan: #6a2ea1;
+    --color-orange: #3346ff;
+    --color-grey: #626965;
+    --color-lightGrey: #978580;
+    --color-darkGrey: #3f4441;
+
+    --inset-shadow-cyanMediumshadow: inset 10px 10px 200px 150px
+      rgba(158, 83, 253, 0.5);
+    --inset-shadow-orangeMediumshadow: inset 10px 10px 200px 150px
+      rgba(66, 71, 254, 0.5);
+
+      */
 }
 
 body {
