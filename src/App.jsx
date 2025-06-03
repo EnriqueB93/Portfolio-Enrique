@@ -1,6 +1,6 @@
 import { AboutMain } from './components/about/AboutMain';
 import { ContactMain } from './components/contact/ContactMain';
-import { Footer } from './components/footer/footer';
+import { Footer } from './components/footer/Footer';
 import { HeroBackground } from './components/hero/HeroBackground';
 import { HeroMain } from './components/hero/HeroMain';
 import { SubHeroSection } from './components/hero/SubHeroSection';
